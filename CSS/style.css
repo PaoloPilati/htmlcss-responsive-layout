@@ -1,16 +1,9 @@
+/* CSS RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Helvetica, sans-serif;
-}
-
-header {
-    color: #ff9614;
-    text-align: center;
 }
 
 /* FONTS */
@@ -21,12 +14,80 @@ header {
     font-style: normal;
 }
 
-.nerk-i {
+.nerk {
   font-family: "Nerko One", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+/* GENERALS */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    color: #ff9614;
+    text-align: center;
+}
+
+main {
+    background-color: #f6f5f3;
+    background-size: 100vw;
+}
+
+footer {
+    color: #ffffff;
+    position: static;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-basis: 100%;
+    gap: 0.5rem;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    gap: 1rem;
+}
+
+span {
+
+    background-color: #dc2020;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
 
 /* UTILS */
 
@@ -39,11 +100,56 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+}
+
+.start-col {
     align-items: flex-start;
+}
+
+.center-col {
+    align-items: center;
 }
 
 .row-flex {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.art-img {
+    width: 50%;
+    height: auto;
+    }
+
+/* MARGINI E PADDING */
+
+.mrg-b1 {
+    margin-bottom: 1rem;
+}
+
+.mrg-b3 {
+    margin-bottom: 3rem;
+}
+
+.pg-v1 {
+    padding: 1rem 0;
+}
+
+.pg-v2 {
+    padding: 2rem 0;
+}
+
+.pg-b3 {
+    padding-bottom: 3rem;
+}
+
+/* BACKGROUNDS e BORDI */
+
+.brd-org {
+    border: 1px solid #ff9614;
+    width: 15%;
+}
+
+.bg-purple {
+    background-color: #7c69a4;
 }
