@@ -49,8 +49,6 @@ footer {
     gap: 0.5rem;
 }
 
-
-
 h1 {
     font-size: 3rem;
 }
@@ -67,7 +65,16 @@ h4 {
     font-size: 3rem;
 }
 
-a {
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul > li {
+    margin: 0 0.5rem
+}
+
+li > a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -94,6 +101,10 @@ img {
     border-radius: 50%;
     padding: 1rem;
 }
+
+/* MEDIA QUERY */
+
+
 
 /* UTILS */
 
