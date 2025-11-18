@@ -69,6 +69,12 @@ h4 {
 
 a {
     text-decoration: none;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
 #social {
@@ -80,7 +86,7 @@ a {
     gap: 1rem;
 }
 
-span {
+#social > span {
 
     background-color: #dc2020;
     width: 4rem;
@@ -116,20 +122,33 @@ span {
     align-items: center;
 }
 
-.art-img {
-    }
-
-.rel-pic {
+.rel-fig {
     position: relative;
-    width: 60%;
+    width: 25rem;
     height: auto;
+    align-self: center;
 }
 
-.abs-pic {
+.abs-overlay {
     position: absolute;
-    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.55;
+    display: none;
+}
+
+figure.rel-fig:hover div.abs-overlay {
+    display: block;
+}
+
+span.heart {
+    position: absolute;
     top: 50%;
-    transform: translate (-50%, -50%)
+    left: 50%;
+    transform: (-50% -50%);
+    color: #c60707;
+    font-size: 5em;
 }
 
 /* MARGINI E PADDING */
