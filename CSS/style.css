@@ -117,9 +117,20 @@ span {
 }
 
 .art-img {
-    width: 50%;
-    height: auto;
     }
+
+.rel-pic {
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+
+.abs-pic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate (-50%, -50%)
+}
 
 /* MARGINI E PADDING */
 
