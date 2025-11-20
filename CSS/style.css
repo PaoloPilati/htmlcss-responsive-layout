@@ -29,6 +29,7 @@ body {
 header {
     color: #ff9614;
     text-align: center;
+    text-transform: uppercase;
 }
 
 main {
@@ -55,10 +56,12 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    color: #4e3969;
 }
 
 h3 {
     font-size: 3rem;
+    font-weight: normal;
 }
 
 h4 {
@@ -77,6 +80,7 @@ ul > li {
 li > a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
 }
 
 img {
@@ -100,10 +104,47 @@ img {
     height: 4rem;
     border-radius: 50%;
     padding: 1rem;
+    box-shadow: 0.5rem 0rem 1rem;
+}
+
+div.banner {
+    display: none;
+
 }
 
 /* MEDIA QUERY */
 
+@media screen and (min-width: 576px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color: #6cf5dc;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color: #f8c0c9;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color:#4cd489
+    }
+        
+}
 
 
 /* UTILS */
@@ -113,10 +154,16 @@ img {
     margin: 0 auto;
 }
 
+.img-container {
+    max-width: fit-content;
+
+}
+
 .col-flex {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-content: center;
 }
 
 .start-col {
@@ -128,38 +175,45 @@ img {
 }
 
 .row-flex {
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    align-content: center
+}
+
+div.card-bottom {
+
 }
 
 .rel-fig {
     position: relative;
-    width: 25rem;
     height: auto;
+}
+
+.al-self-cen {
     align-self: center;
 }
 
 .abs-overlay {
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #000000;
     opacity: 0.55;
-    display: none;
 }
 
 figure.rel-fig:hover div.abs-overlay {
     display: block;
 }
 
+/* ERRORE NEL POSIZIONAMENTO DEL CUORE */
 span.heart {
     position: absolute;
+    color: #c60707;
     top: 50%;
     left: 50%;
     transform: (-50% -50%);
-    color: #c60707;
-    font-size: 5em;
 }
 
 /* MARGINI E PADDING */
@@ -193,4 +247,9 @@ span.heart {
 
 .bg-purple {
     background-color: #7c69a4;
+}
+
+.bg-white {
+    background-color: white;
+    background-size:auto;
 }
