@@ -6,56 +6,6 @@
     box-sizing: border-box;
 }
 
-/* MEDIA QUERY */
-
-@media screen and (min-width: 576px) {
-    div.banner {
-        display: flex;
-    }
-
-    body {
-        background-color: #6cf5dc;
-    }
-        
-}
-
-@media screen and (min-width: 768px) {
-    div.banner {
-        display: block;
-    }
-
-    body {
-        background-color: #f8c0c9;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    div.banner {
-        display: block;
-    }
-
-    body {
-        background-color:#4cd489
-    }
-
-    .container {
-        max-width: 80%;
-    }
-
-    #main-card: {
-        display: flex;
-        flex-flow: row wrap;
-    }   
-
-    #main-card > * {
-    flex-basis: 50%;
-    }
-
-    #card-bottom > * {
-    flex-basis: content;
-    }
-
-}
 
 /* FONTS */
 
@@ -214,6 +164,8 @@ div.banner {
     height: 100%;
     background-color: #000000;
     opacity: 0.55;
+    top: 0;
+    left: 0;
 }
 
 div.rel-fig:hover div.abs-overlay {
@@ -226,7 +178,7 @@ span.heart {
     color: #c60707;
     top: 50%;
     left: 50%;
-    transform: (-50% -50%);
+    transform: translate(-50%, -50%);
     font-size: 8rem;
 }
 
@@ -265,23 +217,77 @@ span.heart {
 
 .bg-white {
     background-color: white;
-    background-size:auto;
+    background-size: auto;
 }
 
 #main-card {
     display: flex;
     flex-direction: column;
-    max-width: 769px;
 
 }
 
 #card-bottom {
     display: flex;
     flex-direction: column;
-    flex-basis: content;
+    padding: 2rem;
 }
 
 
-#card-bottom > * {
-    flex-basis: 100%;
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+    div.banner {
+        display: flex;
+    }
+
+    body {
+        background-color: #6cf5dc;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color: #f8c0c9;
+    }
+
+    div.list-items {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    div.list-items > * {
+        flex-basis: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color:#4cd489
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    #main-card {
+        display: flex;
+        flex-flow: row wrap;
+    }   
+
+    #main-card > * {
+    flex-basis: 50%;
+    }
+
+    div.list-items > * {
+        flex-basis: 100%;
+    }
 }
