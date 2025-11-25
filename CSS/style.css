@@ -6,6 +6,57 @@
     box-sizing: border-box;
 }
 
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+    div.banner {
+        display: flex;
+    }
+
+    body {
+        background-color: #6cf5dc;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color: #f8c0c9;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.banner {
+        display: block;
+    }
+
+    body {
+        background-color:#4cd489
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    #main-card: {
+        display: flex;
+        flex-flow: row wrap;
+    }   
+
+    #main-card > * {
+    flex-basis: 50%;
+    }
+
+    #card-bottom > * {
+    flex-basis: content;
+    }
+
+}
+
 /* FONTS */
 
 .mont {
@@ -85,7 +136,8 @@ li > a {
 
 img {
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 #social {
@@ -112,40 +164,6 @@ div.banner {
 
 }
 
-/* MEDIA QUERY */
-
-@media screen and (min-width: 576px) {
-    div.banner {
-        display: block;
-    }
-
-    body {
-        background-color: #6cf5dc;
-    }
-        
-}
-
-@media screen and (min-width: 768px) {
-    div.banner {
-        display: block;
-    }
-
-    body {
-        background-color: #f8c0c9;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    div.banner {
-        display: block;
-    }
-
-    body {
-        background-color:#4cd489
-    }
-        
-}
-
 
 /* UTILS */
 
@@ -155,7 +173,7 @@ div.banner {
 }
 
 .img-container {
-    max-width: fit-content;
+    object-fit: contain;
 
 }
 
@@ -176,18 +194,13 @@ div.banner {
 
 .row-flex {
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-content: center
 }
 
-div.card-bottom {
-
-}
-
 .rel-fig {
     position: relative;
-    height: auto;
 }
 
 .al-self-cen {
@@ -203,7 +216,7 @@ div.card-bottom {
     opacity: 0.55;
 }
 
-figure.rel-fig:hover div.abs-overlay {
+div.rel-fig:hover div.abs-overlay {
     display: block;
 }
 
@@ -214,6 +227,7 @@ span.heart {
     top: 50%;
     left: 50%;
     transform: (-50% -50%);
+    font-size: 8rem;
 }
 
 /* MARGINI E PADDING */
@@ -252,4 +266,22 @@ span.heart {
 .bg-white {
     background-color: white;
     background-size:auto;
+}
+
+#main-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 769px;
+
+}
+
+#card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+}
+
+
+#card-bottom > * {
+    flex-basis: 100%;
 }
