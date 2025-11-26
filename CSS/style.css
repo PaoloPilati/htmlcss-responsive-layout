@@ -97,6 +97,7 @@ img {
     align-items: center;
     flex-basis: 100%;
     gap: 1rem;
+    line-height: normal;
 }
 
 #social > span {
@@ -107,6 +108,7 @@ img {
     border-radius: 50%;
     padding: 1rem;
     box-shadow: 0.5rem 0rem 1rem;
+    text-align: center;
 }
 
 div.banner {
@@ -168,7 +170,7 @@ div.banner {
     left: 0;
 }
 
-div.rel-fig:hover div.abs-overlay {
+figure.rel-fig:hover div.abs-overlay {
     display: block;
 }
 
@@ -262,6 +264,14 @@ span.heart {
     }
     div.list-items > * {
         flex-basis: calc(100% / 3);
+    }
+
+    #social > span {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5rem;
+    line-height: 1rem;
+    vertical-align: middle;
     }
 }
 
