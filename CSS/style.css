@@ -170,6 +170,12 @@ div.banner {
     left: 0;
 }
 
+.floating-img {
+    float: left;
+    width: 25rem;
+    margin: 0 1rem 1rem 0;
+}
+
 figure.rel-fig:hover div.abs-overlay {
     display: block;
 }
