@@ -171,13 +171,13 @@ div.banner {
 }
 
 .floating-img {
-    float: left;
     width: 25rem;
-    margin: 0 1rem 1rem 0;
+    height: auto;
+    margin: 1rem;
 }
 
 figure.rel-fig:hover div.abs-overlay {
-    display: block;
+    display: inline;
 }
 
 /* ERRORE NEL POSIZIONAMENTO DEL CUORE */
@@ -251,6 +251,13 @@ span.heart {
 
     body {
         background-color: #6cf5dc;
+    }
+
+    .floating-img {
+    float: left;
+    width: 25rem;
+    height: auto;
+    margin: 0 1rem 1rem 0;
     }
         
 }
